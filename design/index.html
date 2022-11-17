@@ -1,0 +1,336 @@
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>Ganesh Designmatics ltd</title>
+        <link rel="stylesheet" href="C:\design\css\styles.css">
+      <!-- css cdn-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- javascript-->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <!-- font googles-->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+      <!-- font awesome w3-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- favicon-->
+      <link rel="icon" href="C:\design\images\fav.ico">
+      <!-- font awesome-->
+      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+      <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #152D35;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
+
+    <script>
+    function setCookie(cname,cvalue,exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function checkCookie() {
+      let user = getCookie("username");
+      if (user != "") {
+        alert("Welcome again " + user);
+      } else {
+         user = prompt("Please enter your name:","");
+         if (user != "" && user != null) {
+           setCookie("username", user, 30);
+         }
+      }
+    }
+    </script>
+
+      </head>
+
+
+      <body style="font-family: 'Ubuntu', sans-serif;" onload="checkCookie()" >
+
+        <section id="title" style="background-color: #D4ECDD;  background-image: linear-gradient(170deg, #D4ECDD 0%, #D4ECDD 60%, #152D35 60.1%); ">
+
+    <div class="container-fluid" style="padding: 5% 15%;">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-xl navbar-light" style="padding: 0 0 4.5rem;">
+        <a class="navbar-brand" href="" style="font-size: 2.5rem; color: #152D35;"><i class='fas fa-dog'></i> Ganesh Designmatics Ltd</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#about" style="font-size:1.1rem; padding-right:18px">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#project " style="font-size:1.1rem; padding-right:18px">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#container1 " style="font-size:1.1rem; padding-right:18px">Blog</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contact " style="font-size:1.1rem;">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+
+      <!-- Title -->
+         <br>
+            <div class="row">
+                <div class="col-lg-6">
+                  <h1 class="meet" style="color: #152D35;"><font size="15.5"><b>Grow your business with us!</b></font></h1>
+                  <p class="harry" style="color: #152D35;"> <font size="3.5">Top Website & Mobile App Development Company.</font></p>
+                </div>
+                <div class="col-lg-6">
+                  <img class="yahh" src="C:\design\images\pink.png" alt="" width="450" height="400" style="padding-left: 3.0rem; margin-left:3.5rem;">
+
+                </div>
+                </div>
+
+            </div>
+
+            <div class="header">
+              <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+                <style media="screen">
+
+                .header {
+                 position: fixed;
+                 top: 0;
+                 z-index: 1;
+                 width: 100%;
+                 background-color: #f1f1f1;
+                }
+                .progress-container {
+                width: 100%;
+                height: 8px;
+                background: #ccc;
+                }
+
+                .progress-bar {
+                height: 8px;
+                background: #04AA6D;
+                width: 0%;
+                }
+
+               .content {
+               padding: 100px 0;
+               margin: 50px auto 0 auto;
+               width: 80%;
+               }
+                </style>
+
+                <script>
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {myFunction()};
+
+                function myFunction() {
+                  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                  var scrolled = (winScroll / height) * 100;
+                  document.getElementById("myBar").style.width = scrolled + "%";
+                }
+                </script>
+
+              </div>
+            </div>
+
+        </section>
+
+    <!-- about us -->
+
+    <section id="about" style="background-color: #152D35;">
+      <div class="container2" style="  padding: 3.5rem;">
+                    <div class="col-lg-12">
+                      <h1 class="meet" style="color: #D4ECDD; padding-left: 1.2rem;">About Us</h1>
+                      <p class="harry" style="color: #D4ECDD; text-align: justify; padding:1.2rem;"><font size="3">Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics
+                     to include the website’s overall functionality. Web design also includes web apps, mobile apps, and user interface design. Did you know that web design can have a huge impact on your performance in search engines like Google?
+                     Develop a system that is easy to adapt to all devices. At the same time, it will be as functional and convenient as possible for its users.    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     In addition to supporting and managing a company's websites and digital products, we are in charge of planning and building software solutions and online applications. The continually changing internet technologies have a
+                     significant impact on how a web developer works on a daily basis. You can attract users by offering a tailored website design. Create your own unique websites or web applications using our Ganesh Designmatics service. Take
+                    the basic framework and modify each element to meet the unique needs of your business. If you're interested in working with us, you can get in touch with us.</font></p>
+
+                </div>
+              </div>
+
+    </section>
+
+
+
+
+              <!-- projects   style="background-color: #3F0071;" -->
+
+              <section  id="project" style="padding: 3.5rem; background-color:white;">
+                <!-- Gallery -->
+                <h1 class="meet" style="color:  #152D35; text-align: center;"><b><font size="8">Showcase of projects</font></b></h1><br><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" >
+                    <img
+                      src="C:\design\images\lambdatest.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Boat on Calm Water"
+                    />
+
+                    <img
+                      src="C:\design\images\ice.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Wintry Mountain Landscape"
+                    />
+                  </div>
+
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                      src="C:\design\images\almere.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Mountains in the Clouds"
+                    />
+
+                    <img
+                    src="C:\design\images\tap.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Boat on Calm Water"
+                    />
+                  </div>
+
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                      src="C:\design\images\new.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Waves at Sea"
+                    />
+
+                    <img
+                      src="C:\design\images\york.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Yosemite National Park"
+                    />
+                  </div>
+                </div>
+              </section>
+
+
+    <!-- blog -->
+
+     <section id="container1" style="padding: 3.5rem; background-color: #152D35; ">
+     <h1 class="meet" style="color: #D4ECDD ; text-align: justify; padding-left: 1.1rem;">The Blog.</h1><br><br>
+       <div class="row">
+         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="width: 10%; padding:2rem; color:  #D4ECDD ;">
+        <h2>START WITH THE BASICS: LEARN DESIGN THE RIGHT WAY.</h2>
+        <p style=" text-align: justify;">Don’t rush or skip any steps. Start with the basics for better results.</p>
+         </div>
+
+         <div class="col-lg-4 mb-4 mb-lg-0" style="width: 10%; padding:2rem; color: #D4ECDD ;" >
+           <h2>WHY YOU NEED A PROFESSIONAL DESIGNER.</h2>
+           <p style=" text-align: justify;">Dolor sit amet ekolor aloma Cons ctetur the old what adips Incidunt ullt labe off.</p>
+         </div>
+
+         <div class="col-lg-4 mb-4 mb-lg-0" style="width: 10%; padding:2rem; color:  #D4ECDD ;" >
+           <h2>ILLUSTRATIONS CAN LIVEN UP YOUR SITES AND PRODUCTS.</h2>
+           <p  style=" text-align: justify;">Dolor sit amet ekolor aloma Cons ctetur the old what adips Incidunt ullt labe off.</p>
+         </div>
+
+         <div class="col-lg-4 mb-4 mb-lg-0" style="width: 10%; padding:2rem; color:#D4ECDD ;">
+           <h2>ILLUSTRATIONS CAN LIVEN UP YOUR SITES AND PRODUCTS.</h2>
+           <p  style=" text-align: justify;">Dolor sit amet ekolor aloma Cons ctetur the old what adips Incidunt ullt labe off.</p>
+         </div>
+
+         <div class="col-lg-4 mb-4 mb-lg-0" style="width: 10%; padding:2rem; color: #D4ECDD ;">
+           <h2>ILLUSTRATIONS CAN LIVEN UP YOUR SITES AND PRODUCTS.</h2>
+           <p  style=" text-align: justify;">Dolor sit amet ekolor aloma Cons ctetur the old what adips Incidunt ullt labe off.</p>
+         </div>
+
+         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="width: 10%; padding:2rem; color: #D4ECDD ;" >
+        <h2>START WITH THE BASICS: LEARN DESIGN THE RIGHT WAY.</h2>
+        <p style=" text-align: justify;">Don’t rush or skip any steps. Start with the basics for better results.</p>
+         </div>
+
+       </div>
+
+     </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" style="padding: 3.5rem;">
+      <h1 style="color:#152D35; text-align: justify; padding-left:0.8rem; padding-bottom:2rem; padding-top:2rem; background-color: #D4ECDD; ">Contact Us</h1>
+
+      <form class="" action="index.php" method="post">
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Updates
+          </label>
+        </div>
+
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer id="footer" style="background-color:  #152D35 ; color: #D4ECDD; text-align: center;">
+
+      <p>© Copyright Ganesh Designmatics Ltd - 2022</p>
+
+    </footer>
+
+
+      </body>
+    </html>
